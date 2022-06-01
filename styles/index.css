@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     width: 100%;
@@ -44,12 +49,14 @@ body
     justify-content: space-around;
 }
 
-.menu-home, .menu-about, .menu-gallery
+.menu a
 {
+    font-size: 22px;
     padding-top: 32px;
     width: 25%;
     height: 50%;
     text-align: center;
+    text-decoration: none;
 }
 
 .showcase video
@@ -145,23 +152,30 @@ body {
 	background-color: #282828;
 }
 
+.arrow-container
+{
+    display: flex;
+    width: 100%;
+    height: 3vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .arrow {
-	width: 6vmin;
-	height: 6vmin;
+	width: 3vmin;
+	height: 3vmin;
 	box-sizing: border-box;
 	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: rotate(-45deg);
+	transform: rotate(135deg);
 }
 	
 .arrow::before {
     content: '';
     width: 100%;
     height: 100%;
-    border-width: .8vmin .8vmin 0 0;
+    border-width: .4vmin .4vmin 0 0;
     border-style: solid;
-    border-color: #fafafa;
+    border-color: #f7f7f7;
     transition: .2s ease;
     display: block;
     transform-origin: 100% 0;
@@ -175,9 +189,9 @@ body {
     top: -100%;
     width: 100%;
     height: 100%;
-    border-width: 0 .8vmin 0 0;
+    border-width: 0 .4vmin 0 0;
     border-style: solid;
-    border-color: #fafafa;
+    border-color: #f7f7f7;
     transform-origin: 100% 0;
     transition:.2s ease;
 }
