@@ -5,16 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/gallery.css">
+    <link rel="stylesheet" href="../styles/index.css">
     <title>Dusk - Gallery</title>
 </head>
 <body>
-    <div class="header">
-        <img src="" alt="" id="main-showcase-image">
+    <div class="header-container">
+        <h2 class="title primary-font-color">Dusk Game Engine</h2>
+
+        <div class="menu">
+            <div class="language-container">
+                <input type="image" id="eng" name="eng" src="/src/images/United-Kingdom-Flag.png">
+                <input type="image" id="cz" name="cz" src="/src/images/Czech-Republic-Flag.png">
+            </div>
+
+            <a href="/index.html" class="menu-home primary-font-color">Home</a>
+            <a href="/pages/about.html" class="menu-about primary-font-color">About</a>
+            <a href="/pages/gallery.html" class="menu-gallery primary-font-color">Gallery</a>
+        </div>
+    </div>
+
+    <div class="slideshow">
+        <img src="/src/images/images-gallery/img1.png" alt="" id="main-showcase-image">
+        <!-- <div class="arrow arrow-previous" id="gallery-previous"><input type="button" value=""></div>
+        <div class="arrow arrow-next" id="gallery-next"><input type="button" value=""></div> -->
+
     </div>
 
     <div class="body">
 
     </div>
 </body>
-<script src="/scripts/galleryShowcase.js"></script>
+<script src="/scripts/slideShow.js"></script>
 </html>
