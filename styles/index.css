@@ -27,8 +27,8 @@ body
 
 .header-dark
 {
-    background-color: rgb(56, 56, 56);
-    transition: background-color 10 ease-in;
+    background-color: rgb(33, 33, 33);
+    transition: background-color 200ms ease-out;
 }
 
 .display-none
