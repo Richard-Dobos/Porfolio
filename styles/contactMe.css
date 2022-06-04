@@ -18,7 +18,7 @@
     height: 20vh;
 }
 
-.email-information
+.personal-information
 {
     display: flex;
     justify-content: center;
@@ -26,14 +26,36 @@
     height: 50vh;
 }
 
+.email-information
+{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50vh;
+    margin-top: 20px;
+}
+
 #email
 {
     width: 32%;
-    height: 3vh;
+    height: 100%;
     margin: 0 50px 0 0;
 }
 
 #subject
+{
+    width: 40%;
+    height: 100%;
+}
+
+#firstName
+{
+    width: 32%;
+    height: 100%;
+    margin: 0 50px 0 0;
+}
+
+#lastName
 {
     width: 40%;
     height: 100%;
@@ -50,6 +72,7 @@
     resize: none;
     height: 20vh;
     width: 100%;
+    font-size: 20px;
 }
 
 .buttons
@@ -63,4 +86,11 @@
 {
     height: 3.5vh;
     width: 10vh;
+    border: none;
+    margin-top: 15px;
+}
+
+.buttons [value="Reset"]
+{
+    margin-left: 30px;
 }
