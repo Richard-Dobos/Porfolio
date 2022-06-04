@@ -48,6 +48,7 @@ body
     height: 5vh;
     display: flex;
     width: 100%;
+    z-index: 5;
     justify-content: space-between;
 }
 
@@ -56,6 +57,7 @@ body
     display: flex;
     height: 100%;
     width: 100%;
+    z-index: 5;
     justify-content: space-between;
     border-bottom: 0.15px solid #535353;
 }
