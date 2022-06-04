@@ -28,12 +28,19 @@ body
 .header-dark
 {
     background-color: rgb(33, 33, 33);
-    transition: background-color 200ms ease-out;
+    transition: background-color 300ms ease-out;
 }
 
 .display-none
 {
     display: none;
+}
+
+.header-wrapper
+{
+    height: 10vh;
+    width: 100%;
+    
 }
 
 .header-container-smaller
@@ -47,7 +54,7 @@ body
 .header-container 
 {
     display: flex;
-    height: 10vh;
+    height: 100%;
     width: 100%;
     justify-content: space-between;
     border-bottom: 0.15px solid #535353;
@@ -62,6 +69,7 @@ body
     margin-bottom: 1.5px;
     height: 100%;
     padding-right: 30px;
+    z-index: 10;
 }
 
 .title

@@ -6,7 +6,6 @@ const menuElements = document.querySelectorAll(".menu-element")
 window.onscroll = function() {scroll()}
 
 
-console.log(menuElements)
 function scroll()
 {
     if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5)
@@ -33,7 +32,7 @@ function scroll()
 
         header.classList.remove("header-container-smaller")
         header.classList.add("header-container")
-
+        
         title.classList.remove("title-smaller")
         title.classList.add("title")
 
