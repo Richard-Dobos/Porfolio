@@ -28,21 +28,21 @@
     </div>
     
     <div class="form-container">
-        <form action="">
-
+        <form onsubmit="sendEmail(); reset(); return false">
             <div class="personal-information">
                 <input type="text" name="firstName" id="firstName" placeholder="First Name" required maxlength="69">
                 <input type="text" name="lastName" id="lastName" placeholder="Last Name" required maxlength="69">
             </div>
 
             <div class="email-information">    
-                <input type="email" name="email" id="email" placeholder="Email" required maxlength="80">
+                <input type="email" name="email" id="email" placeholder="E-mail" required maxlength="80">
                 <input type="text" name="subject" id="subject" placeholder="Subject" required maxlenght="120">
             </div>
 
             <div class="email-content">
                <textarea name="email-content" id="email-content" cols="60" rows="5" placeholder="Type Here" required maxlength="420"></textarea>
             </div>
+
             <div class="buttons">
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
@@ -51,4 +51,6 @@
     </div>
 </body>
 <script src="../scripts/menuScroll.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="../scripts/emailSend.js"></script>
 </html>
