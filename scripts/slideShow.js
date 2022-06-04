@@ -2,6 +2,12 @@ const mainImage = document.querySelector("#main-showcase-image")
 const nextImage = document.querySelector("#next-showcase-image")
 const previousImage = document.querySelector("#previous-showcase-image")
 
+const nextImageButton = document.querySelector("#next-image-button")
+const previousImageButton = document.querySelector("#previous-image-button")
+
+
+const selectedImage = document.querySelector("#selected-image")
+const popupImage = document.querySelector("#popup-image")
 
 const PATH = "../src/images/images-gallery/"
 const imageGallery = document.querySelector("#image-gallery")
@@ -25,6 +31,22 @@ let imageNumbering = 1
 
 slideShow()
 displayImages()
+
+popupImage.addEventListener("click", () => {
+    popupImage.style.transform = "translateY(-100%)"
+})
+
+document.querySelector("#body").addEventListener("keydown", (event) => {    
+    if(event.key == "Escape")
+    {
+        popupImage.style.transform = "translateY(-100%)"
+        console.log("Escape pressed")
+    }
+})
+
+nextImageButton.addEventListener("click", nextImageInGallery)
+previousImageButton.addEventListener("click", previousImageInGallery)
+
 
 function slideShow()
 {
@@ -81,13 +103,18 @@ function displayImages()
 
 function nextImageInGallery()
 {
-    return 0
+
+}
+
+function previousImageInGallery()
+{
+
 }
 
 function fullscreenImage(event)
 {
-
-
+    selectedImage.src = event.target.src
+    popupImage.style.transform = "translateY(0%)"
 }
 
 imagesInImageGallery.forEach(image => {
