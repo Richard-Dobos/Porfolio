@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/snake.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>Dusk - Snake</title>
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="header-container" id="header">
+            <h2 class="title primary-font-color" id="title"><a href="../index.html" class="primary-font-color">Dusk Game Engine</a></h2>
+
+            <div class="menu">
+                <a href="../index.html" class="menu-element primary-font-color">Home</a>
+                <a href="../pages/about.html" class="menu-element primary-font-color">About</a>
+                <a href="../pages/gallery.html" class="menu-element primary-font-color">Gallery</a>
+                <a href="../pages/contactMe.html" class="menu-element primary-font-color">Contact Me</a>
+                <a href="#" class="menu-element primary-font-color">Snake</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="body primary-font-color">
+        <h1>Snake</h1>
+        <div class="scores">
+            <h3 id="high-score">High Score:</h3>
+            <h3 id="current-score">Score: </h3>
+        </div>
+        <canvas width="720" height="560" id="game"></canvas>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <p class="primary-font-color">Copyright &copy; 2022 Richard Doboš. ALL rights reserved.</p>
+          <div class="social">
+            <a href="#"><img class="github-icon" src="../src/images/github.png" alt=""></a>
+          </div>
+        </div>
+    </footer>
+</body>
+<script src="../scripts/snake.js"></script>
+</html>
