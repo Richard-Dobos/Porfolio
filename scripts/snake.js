@@ -121,7 +121,7 @@ function loop()
         highScoreEl.innerHTML = `High Score: ${highScore}`
     }
     
-    currentScore.innerHTML = `Score: ${highScore}`
+    currentScore.innerHTML = `Score: ${score}`
 }
 
 document.addEventListener('keydown', function(e) {
