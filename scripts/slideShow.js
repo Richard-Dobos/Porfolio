@@ -110,7 +110,7 @@ function slideShow()
 
     console.log(imgIndex)
 
-    setTimeout(slideShow, 10000)
+    setTimeout(slideShow, 30000)
 }
 
 function displayImages()
