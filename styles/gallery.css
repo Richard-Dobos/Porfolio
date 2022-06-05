@@ -138,26 +138,26 @@
 
 #previous-fullscreenimage-button
 {
-    left: 30%;
-    bottom: 100px;
+    left: 4%;
+    bottom: 50%;
     cursor: pointer;
     width: 2.75vmin;
     background-color: transparent;
     height: 2.75vmin;
     box-sizing: border-box;
     position: absolute;
-    transform: rotate(45deg);
-    border-left: solid rgb(172, 172, 172) 5px;
-    border-bottom: solid rgb(172, 172, 172) 5px;
-    border-right: solid rgba(0, 0, 0, 0) 5px;
-    border-top: solid rgba(0, 0, 0, 0) 5px;
+    transform: rotate(225deg);
+    border-left: 0;
+    border-bottom: 0;
+    border-right: solid rgb(172, 172, 172) 5px;
+    border-top: solid rgb(172, 172, 172) 5px;
     z-index: 10;
 }
 
 #next-fullscreenimage-button
 {
-    right: 30%;
-    bottom: 100px;
+    right: 4%;
+    bottom: 50%;
     cursor: pointer;
     width: 2.75vmin;
     background-color: transparent;
@@ -167,12 +167,18 @@
     transform: rotate(225deg);
     border-left: solid rgb(172, 172, 172) 5px;
     border-bottom: solid rgb(172, 172, 172) 5px;
-    border-right: solid rgba(0, 0, 0, 0) 5px;
-    border-top: solid rgba(0, 0, 0, 0) 5px;
+    border-right: 0;
+    border-top: 0;
     z-index: 10;
 }
 
-#next-fullscreenimage-button:hover, #previous-fullscreenimage-button
+#previous-fullscreenimage-button:hover
+{
+    border-right: solid rgb(231, 231, 231) 7.5px;
+    border-top: solid rgb(231, 231, 231) 7.5px;
+}
+
+#next-fullscreenimage-button:hover
 {
     border-left: solid rgb(231, 231, 231) 7.5px;
     border-bottom: solid rgb(231, 231, 231) 7.5px;
