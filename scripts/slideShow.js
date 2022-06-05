@@ -57,12 +57,18 @@ previousFullscreenImageBtn.addEventListener("click", previousFullscreenImage)
 nextImageButton.addEventListener("click", nextImageInGallery)
 previousImageButton.addEventListener("click", previousImageInGallery)
 
-if(mainImage.classList.contains("main-showcase-image:hover"))
+document.querySelector("#body").addEventListener("keydown", (event) =>
 {
-    console.log(`works`)
-}
+    if(event.key == "ArrowLeft")
+    {
+        previousFullscreenImage()
+    }
 
-
+    if(event.key == "ArrowRight")
+    {
+        nextFullscreenImage()
+    }
+})
 
 slideShow()
 displayImages()
