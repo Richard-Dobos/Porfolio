@@ -22,7 +22,7 @@ function verification(event)
 
   else
   {
-    sendEmail(name, email.value, emailContent.value, subject.value, "outlook")
+    sendEmail(name, email.value, emailContent.value, subject.value, "")
     resetValue()
   }
 }
@@ -52,7 +52,18 @@ function sendEmail(name, email, msg, subject, service)
   {
     emailjs.send("service_9kvzrdt", "template_93f705e", {
       from_name: name,
-      to_name: email,
+      from_email: email,
+      subject: subject,
+      message: msg
+    })
+  }
+
+  else
+  {
+    emailjs.send("service_9kvzrdt", "template_93f705e", {
+      from_name: name,
+      from_email: email,
+      subject: subject,
       message: msg
     })
   }
