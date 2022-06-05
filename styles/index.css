@@ -296,6 +296,8 @@ body
     display: flex;
     width: 20%;
     justify-content: flex-start;
+    align-items: center;
+    align-content: center;
 }
 .github-icon
 {

@@ -33,6 +33,11 @@
     aspect-ratio: 16/9;
 }
 
+#pause-button
+{
+    position: absolute;
+}
+
 .body
 {
     width: 100%;
@@ -42,9 +47,9 @@
 
 .image
 {
+    cursor: pointer;
     height: 32.5vh;
     aspect-ratio: 16/9;
-    cursor: pointer;
     padding: 50px 0;
     transition: 0.35s;
     z-index: 0;
@@ -52,7 +57,6 @@
 
 .image-hover:hover
 {
-    filter: contrast(1.15);
     transform: scale(1.1);
 }
 
@@ -132,7 +136,7 @@
 }
 
 
-#next-fullscreenimage-button
+#previous-fullscreenimage-button
 {
     left: 30%;
     bottom: 100px;
@@ -150,7 +154,7 @@
     z-index: 10;
 }
 
-#previous-fullscreenimage-button
+#next-fullscreenimage-button
 {
     right: 30%;
     bottom: 100px;
