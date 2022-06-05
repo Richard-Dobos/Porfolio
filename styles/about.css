@@ -1,7 +1,29 @@
 .about-container
 {
-    height: 80vh;
+    display: flex;
+    height: 70vh;
+    width: 100%;
     margin: 0;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding-top: 10vh;
+}
+
+.about-header
+{
+    width: 20%;
+    font-size: 38px;
+    color: rgb(187, 128, 19);
+    margin-right: 60vh;
+    margin-bottom: 5vh;
+}
+
+.about-content
+{
+    width: 50%;
+    font-size: 20px;
+    line-height: 35px;
 }
 
 .forsenE-display-none
