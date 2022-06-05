@@ -1,0 +1,25 @@
+.about-container
+{
+    height: 80vh;
+    margin: 0;
+}
+
+.forsenE-display-none
+{
+    display: none;
+}
+
+.forsenE
+{
+    position: absolute;
+    cursor: pointer;
+    height: 2vh;
+    width: 2vh;
+    top: 1640px;
+    left: 0;
+}
+
+.audio-display-none
+{
+    display: none;
+}
