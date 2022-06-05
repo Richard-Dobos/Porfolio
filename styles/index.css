@@ -74,6 +74,11 @@ body
     z-index: 10;
 }
 
+.title-smaller a
+{
+    text-decoration: none   ;
+}
+
 .title
 {
     display: flex;
@@ -83,6 +88,11 @@ body
     margin-bottom: 1.5px;
     height: 100%;
     padding-right: 30px;
+}
+
+.title a
+{
+    text-decoration: none;
 }
 
 .menu
@@ -203,8 +213,22 @@ body
     width: 40%;
 }
 
+.about-container
+{
+    width: 100%;
+    height: 50vh;
+    background-color: #282828;
+}
+
+.footer-container
+{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+}
+
 body {
-	background-color: #282828;
+	background-color: #0c0c0c;
 }
 
 @keyframes arrowAnimation
