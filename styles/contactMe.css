@@ -1,8 +1,7 @@
 .form-container {
   display: flex;
   width: 100%;
-  height: 50vh;
-  flex-direction: column;
+  height: 80vh;
   align-items: center;
   align-content: center;
   justify-content: space-around;
@@ -13,56 +12,74 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 20vh;
+  height: 100%;
+  background-color: #282828;
 }
 
 .personal-information {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin-top: 4vh;
   width: 50%;
-  height: 70vh;
+  height: 10%;
 }
 
 .email-information {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 50%;
-  height: 50vh;
+  height: 10%;
   margin-top: 20px;
 }
 
 #email {
-  width: 32%;
+  width: 50%;
   height: 100%;
-  margin: 0 50px 0 0;
+  font-size: 15px;
+  outline: none;
+  padding-left: 10px;
 }
 
 #subject {
-  width: 40%;
+  width: 50%;
   height: 100%;
+  font-size: 15px;
+  margin-top: 20px;
+  outline: none;
+  padding-left: 10px;
 }
 
 #firstName {
-  width: 32%;
+  width: 50%;
   height: 100%;
-  margin: 0 50px 0 0;
+  font-size: 15px;
+  outline: none;
+  padding-left: 10px;
 }
 
 #lastName {
-  width: 40%;
+  width: 50%;
   height: 100%;
+  font-size: 15px;
+  margin-top: 20px;
+  outline: none;
+  padding-left: 10px;
 }
 
 .email-content {
   padding: 30px 0 0 0;
-  width: 38.25%;
+  width: 25%;
 }
 
 #email-content {
   resize: none;
   height: 20vh;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px;
   outline: none;
 }
@@ -70,14 +87,14 @@
 .buttons {
   display: flex;
   flex-direction: column;
-  width: 38%;
-  justify-content: flex-start;
+  width: 50%;
+  align-items: center;
 }
 
 .buttons input {
   height: 5vh;
   font-size: larger;
-  width: 50;
+  width: 50%;
   border: none;
   margin-top: 15px;
   border-radius: 100px;
