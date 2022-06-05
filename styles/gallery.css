@@ -12,7 +12,7 @@
     align-content: center;
     width: 100%;
     height: 40vh;
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(78, 78, 78);
 }
 
 #main-showcase-image
@@ -37,7 +37,7 @@
 {
     width: 100%;
     height: 70vh;
-    background-color: grey;
+    background-color: #0c0c0c;
 }
 
 .image
@@ -61,6 +61,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #313131;
 }
 
 .buttons
