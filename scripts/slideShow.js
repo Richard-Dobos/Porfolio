@@ -23,15 +23,21 @@ const imagesSrc = [     PATH + "img1.png",
                         PATH + "img7.png",
                         PATH + "img8.png",
                         PATH + "img9.png",
-                        PATH + "img10.png"
+                        PATH + "img11.png",
+                        PATH + "img12.png",
+                        PATH + "img13.png",
+                        PATH + "img14.png",
+                        PATH + "img15.png",
+                        PATH + "img16.png",
+                        PATH + "img17.png",
+                        PATH + "img18.png",
+                        PATH + "img19.png"
                 ]   
 
 let imagesInImageGallery = []
 
 let imgIndex = 7
-let imageNumbering = 1
-
-let fullscreenImageIndex
+let fullScreenImageIndex = 0
 
 selectedImage.addEventListener("click", () => {
     popupImage.style.transform = "translateY(-100%)"
@@ -50,6 +56,11 @@ previousFullscreenImageBtn.addEventListener("click", previousFullscreenImage)
 
 nextImageButton.addEventListener("click", nextImageInGallery)
 previousImageButton.addEventListener("click", previousImageInGallery)
+
+if(mainImage.classList.contains("main-showcase-image:hover"))
+{
+    console.log(`works`)
+}
 
 
 
@@ -98,9 +109,14 @@ function slideShow()
 
 function displayImages()
 {
+    let index = 0
+    let imageNumbering = 1
+
     imagesSrc.forEach(image => {
-        imageGallery.innerHTML += '<img src="' + image + '" alt="" class="image image-hover" id="image-' + imageNumbering + '">'
+        imageGallery.innerHTML += `<img src="${image}" alt="${index}" class="image image-hover" id="image-${imageNumbering}">`
+        
         imageNumbering++
+        index++
     });
 
     for(i = 1; i <= imagesSrc.length;i++)
@@ -183,18 +199,46 @@ function previousImageInGallery()
 
 function fullscreenImage(event)
 {
+    fullScreenImageIndex = event.target.alt
+
+
     selectedImage.src = event.target.src
+    selectedImage.alt = fullScreenImageIndex
     popupImage.style.transform = "translateY(0%)"
+
+    console.log(fullScreenImageIndex)
 }
 
 function nextFullscreenImage()
 {
-    console.log("Next img")
+    if(fullScreenImageIndex+1 >= imagesSrc.length)
+    {
+        fullScreenImageIndex = 0
+    }
+
+    else
+    {
+        fullScreenImageIndex++
+    }
+
+    selectedImage.src = imagesSrc[fullScreenImageIndex]
+    selectedImage.alt = fullScreenImageIndex
 }
 
 function previousFullscreenImage()
 {
-    console.log("Previous img")
+    if(fullScreenImageIndex-1 < 0)
+    {
+        fullScreenImageIndex = imagesSrc.length-1
+    }
+
+    else
+    {
+        fullScreenImageIndex--
+    }
+
+    selectedImage.src = imagesSrc[fullScreenImageIndex]
+    selectedImage.alt = fullScreenImageIndex
 }
 
 imagesInImageGallery.forEach(image => {
